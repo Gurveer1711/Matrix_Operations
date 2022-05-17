@@ -1,0 +1,76 @@
+﻿<Window x:Class="GurveerSinghMidterm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GurveerSinghMidterm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="AliceBlue">
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Open Text File" Click="open_Click"/>
+                <MenuItem Header="close"/>
+            </ContextMenu>
+        </Grid.ContextMenu>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="size" HorizontalAlignment="Left" Margin="125,78,0,0" TextWrapping="Wrap" Text="" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="120" Height="34" Grid.Row="1"/>
+        <Label x:Name="printer" Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="78,0,78,0" VerticalAlignment="Center" Width="645" Grid.Row="2" Height="45" Foreground="#FF0C40BF" FontSize="16" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="2"/>
+        <Button x:Name="submit" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Height="25" Click="submit_Click" Margin="268,78,0,0" Grid.Row="1">
+            <Button.Content>
+                <StackPanel>
+                    <TextBlock Text="Submit" FontSize="15"/>
+                </StackPanel>
+            </Button.Content>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="entry" HorizontalAlignment="Left" Height="34" Margin="125,126,0,0" Width="120" TextWrapping="Wrap" Text="" VerticalContentAlignment="Center" VerticalAlignment="Top"  Grid.Row="1"/>
+        <Button x:Name="searchFile" Background="Orange" HorizontalAlignment="Left"  Width="85" Height="25" VerticalAlignment="Top"  Click="searchFile_Click" Grid.Column="1" Grid.Row="1" Margin="282,82,0,0">
+            <Button.Content>
+                <StackPanel>
+                    <TextBlock Text="Search" FontSize="15"/>
+                </StackPanel>
+            </Button.Content>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Marix Operations " Height="47" Margin="310,41,256,0" VerticalAlignment="Top" Width="234" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="18" FontStyle="Italic" />
+        <Button x:Name="check" Background="Orange" HorizontalAlignment="Left" Height="25" Margin="268,131,0,0" Grid.Row="1" VerticalAlignment="Top" Width="85" Click="check_Click">
+            <Button.Content>
+                <StackPanel>
+                    <TextBlock Text="Check" FontSize="15"/>
+                </StackPanel>
+            </Button.Content>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Size:" HorizontalAlignment="Left" Margin="66,82,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <Label Content="String:" HorizontalAlignment="Left" Margin="53,126,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.053,0.046" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <TextBox x:Name="f_name" VerticalContentAlignment="Center" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="144,79,0,0" Width="120" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+        <Label Grid.Column="1" Content="File Name: " HorizontalAlignment="Left" Margin="54,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" RenderTransformOrigin="-0.598,-0.005" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <Label Content="Part A" HorizontalAlignment="Left" Height="31" Margin="146,15,0,0" Grid.Row="1" VerticalAlignment="Top" Width="78" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
+        <Label Grid.Column="1" Content="Part B" HorizontalAlignment="Left" Height="31"  Margin="188,15,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
+        <Separator Grid.Column="1" HorizontalAlignment="Left" Height="217" Margin="1,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="0">
+        </Separator>
+
+
+    </Grid>
+</Window>
